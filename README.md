@@ -41,7 +41,7 @@ Install and use by directly including the [browser files](dist):
 </body>
 ```
 
-To avoid confusion, please note that it does not scale the texture, but modifies the entities `geometry` (width/height) to fit the texture perfectly.
+To avoid confusion, please note that it does not scale the texture, but modifies the entities `geometry` (width/height) to match the textures dimensions.
 
 
 #### NPM Installation
