@@ -21,10 +21,13 @@ Install and use by directly including the [browser files](dist):
 
 <body>
   <a-scene>
-    // before: This entity will have a stretched image, unless you know and specify width/height manually.
+    <!-- 
+    before: This entity will have a stretched image,
+    unless you know and specify width/height manually. 
+    -->
     <a-entity material="texture:randomimage.jpg">
     
-    // now: The entity will scale according to the texture.
+    <!-- now: The entity will scale according to the texture. -->
     <a-entity material="texture:randomimage.jpg" fit-texture>
     
   </a-scene>
