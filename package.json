@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nylki/aframe-fit-component.git"
+    "url": "git+https://github.com/nylki/aframe-fit-texture-component.git"
   },
   "keywords": [
     "aframe",
