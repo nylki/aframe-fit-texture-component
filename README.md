@@ -4,7 +4,7 @@ A fit-texture component for [A-Frame](https://aframe.io) VR. The `fit-texure` co
 use `material` component with a image as texture. (Videos textures don't work yet).
 Is intented for use with iage planes (aka `a-image`), but feel free to experiment with others or create pull requests! :)
 
-![screenshot](https://cloud.githubusercontent.com/assets/674727/11915616/59342aca-a663-11e5-9b6b-8a0b243fe5da.png)
+![screenshot](https://cloud.githubusercontent.com/assets/1710598/14921020/431f7b42-0e30-11e6-9fdf-83f748ad3c2b.png)
 
 ### Usage
 
