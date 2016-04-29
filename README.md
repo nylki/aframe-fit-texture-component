@@ -27,7 +27,7 @@ Install and use by directly including the [browser files](dist):
     // now: The entity will scale according to the texture.
     <a-entity material="texture:randomimage.jpg" fit-texture>
     
-      </a-scene>
+  </a-scene>
 </body>
 ```
 
