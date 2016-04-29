@@ -30,10 +30,10 @@ Install and use by directly including the [browser files](dist):
     <!-- Now: The entity will scale according to the texture. -->
     <a-entity material="src: url(randomimage.png)" fit-texture>
       
-    <!--You can also set the `width` if you need your entity to be of a specific width, but get scaled in height automatically:-->
+    <!--if you need your entity to be of a specific width, but get scaled in height without stretching automatically, only defining the `width` works:-->
     <a-entity geometry="primitive: plane; width:21" material="src: url(randomimage.png)" fit-texture>
       
-    <!--Same as above but with a fixed height::-->
+    <!--Same as above but with a fixed height:-->
     <a-entity geometry="primitive: plane; height:0.123" material="src: url(randomimage.png)" fit-texture>
       
     <!--`a-images` work of course:-->
