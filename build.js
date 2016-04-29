@@ -11,7 +11,7 @@ if (typeof AFRAME === 'undefined') {
  * Fit Texture component for A-Frame.
  */
 AFRAME.registerComponent('fit-texture', {
-  dependencies: ['geometry'],
+  dependencies: ['geometry', 'material'],
   schema: {
     type: 'boolean',
     default: true
