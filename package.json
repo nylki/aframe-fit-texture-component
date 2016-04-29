@@ -27,9 +27,9 @@
   "author": "Tom Brewe <tombrwe@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nylki/aframe-fit-component/issues"
+    "url": "https://github.com/nylki/aframe-fit-texture-component/issues"
   },
-  "homepage": "https://github.com/nylki/aframe-fit-component#readme",
+  "homepage": "https://github.com/nylki/aframe-fit-texture-component#readme",
   "devDependencies": {
     "aframe": "^0.2.0",
     "browserify": "^12.0.1",
