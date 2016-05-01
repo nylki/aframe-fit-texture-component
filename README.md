@@ -57,3 +57,6 @@ Then register and use.
 require('aframe');
 require('aframe-fit-texture-component');
 ```
+
+## Contribution
+Supporting video textures would be great to have, therefore PR's would be very welcome! :)
