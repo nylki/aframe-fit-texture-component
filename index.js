@@ -30,7 +30,7 @@ AFRAME.registerComponent('fit-texture', {
        // If texture has already been loaded, and `fit-texture` was reset.
        self.applyTransformation();
      } else {
-       el.addEventListener('material-texture-loaded', function (e) {
+       el.addEventListener('materialtextureloaded', function (e) {
          // TODO: It's probably better to set the texture via material.js/texture.js
          // instead of here, so all components could benefit from this info.
          self.texture = e.detail.texture;
