@@ -1,6 +1,6 @@
 {
   "name": "aframe-fit-texture-component",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Fit Texture component for A-Frame.",
   "main": "index.js",
   "scripts": {
