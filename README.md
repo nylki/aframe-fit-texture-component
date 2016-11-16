@@ -1,7 +1,7 @@
 ## aframe-fit-texture-component
 
 A fit-texture component for [A-Frame](https://aframe.io) VR. The `fit-texture` component can be used with entities that use the `material` component with a image as texture. (Videos textures don't work yet).
-Instead of modifying the texture, this component modifies the entities `geometry` (width/height) to match the textures dimensions perfectly.
+Instead of modifying the texture, this component modifies the entities `geometry` (width/height) to match the textures dimensions perfectly. Tested in A-Frame 0.3.x.
 
 [![screenshot](https://cloud.githubusercontent.com/assets/1710598/14921020/431f7b42-0e30-11e6-9fdf-83f748ad3c2b.png)](https://nylki.github.io/aframe-fit-texture-component/)
 
@@ -15,7 +15,7 @@ Install and use by directly including the [browser files](dist):
 ```html
 <head>
   <title>My A-Frame Scene</title>
-  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
   <script src="https://github.com/nylki/aframe-fit-texture-component/raw/master/dist/aframe-fit-texture-component.min.js"></script>
 </head>
 
