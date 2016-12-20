@@ -99,7 +99,7 @@
 	      el.setAttribute('width', geometry.height / widthHeightRatio);
 	    } else {
 	      // Neither width nor height is set.
-	      var tempWidth = 2;
+	      var tempWidth = 1.0;
 	      el.setAttribute('width', '' + tempWidth);
 	      el.setAttribute('height', tempWidth * widthHeightRatio);
 	    }
