@@ -1,7 +1,7 @@
 ## aframe-fit-texture-component
 
-A fit-texture component for [A-Frame](https://aframe.io) VR. The `fit-texture` component can be used with entities that use the `material` component with a image as texture. (Videos textures don't work yet).
-Instead of modifying the texture, this component modifies the entities `geometry` (width/height) to match the textures dimensions perfectly. Tested in A-Frame 0.3.x.
+A fit-texture component for [A-Frame](https://aframe.io) VR. The `fit-texture` component can be used with entities that use the `material` component with a image or video as texture.
+Instead of modifying the texture, this component modifies the entities `geometry` (width/height) to match the textures dimensions perfectly. Tested in A-Frame 0.3.x and 0.4.0.
 
 [![screenshot](https://cloud.githubusercontent.com/assets/1710598/14921020/431f7b42-0e30-11e6-9fdf-83f748ad3c2b.png)](https://nylki.github.io/aframe-fit-texture-component/)
 
@@ -38,6 +38,9 @@ Install and use by directly including the [browser files](dist):
       
     <!--`a-images` work of course:-->
     <a-image src="randomimage.jpg" fit-texture scale="2.0">
+      
+    <!-- As well as `a-video` -->
+    <a-video src="somevideofile.mp4" position="0 1.75 -1.999" fit-texture></a-video>
 
   </a-scene>
 </body>
@@ -58,6 +61,3 @@ Then register and use.
 require('aframe');
 require('aframe-fit-texture-component');
 ```
-
-## Contribute
-Supporting video textures would be great to have, therefore PR's would be very welcome! :)
