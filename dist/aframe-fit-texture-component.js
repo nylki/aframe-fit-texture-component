@@ -72,23 +72,36 @@
 
 	     var el = this.el;
 	     var self = this;
-	     if (self.texture) {
+	     if (self.dimension) {
 	       // If texture has already been loaded, and `fit-texture` was reset.
 	       self.applyTransformation();
 	     } else {
-	       el.addEventListener('materialtextureloaded', function (e) {
-	         // TODO: It's probably better to set the texture via material.js/texture.js
-	         // instead of here, so all components could benefit from this info.
-	         self.texture = e.detail.texture;
-	         self.applyTransformation();
-	       });
+	       var textureLoaded = function(e) {
+
+	          var w = e.detail.texture.image.videoWidth || e.detail.texture.image.width;
+	          
+	          var h = e.detail.texture.image.videoHeight || e.detail.texture.image.height;
+	          
+	          // Don't apply transformation on incomplete info
+	          if(h === 0 || w === 0) return;
+	          
+	          // Save dimensions for later updates to `fit-texture`, see above.
+	          self.dimensions = {w:w, h:h};
+	          
+	          self.applyTransformation();
+	       }
+	       el.addEventListener('materialvideoloadeddata', textureLoaded);
+	       el.addEventListener('materialtextureloaded', textureLoaded);
+	      
 	     }
 	   },
 	   
 	   applyTransformation: function () {
 	    var el = this.el;
 	    var geometry = el.getAttribute('geometry');
-	    var widthHeightRatio = this.texture.image.height / this.texture.image.width;
+
+	    // Use self.dimension data from previous texture/video loaded events
+	    var widthHeightRatio = this.dimensions.h / this.dimensions.w;
 
 	    if (geometry.width && geometry.height) {
 	      console.warn('Using `fit-texture` component on an element with both width and height. Therefore keeping width and changing height to fit the texture. If you want to manually set both width and height, set `fit-texture="false"`. ');
