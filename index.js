@@ -26,7 +26,7 @@ AFRAME.registerComponent('fit-texture', {
 
      var el = this.el;
      var self = this;
-     if (self.dimension) {
+     if (self.dimensions) {
        // If texture has already been loaded, and `fit-texture` was reset.
        self.applyTransformation();
      } else {
