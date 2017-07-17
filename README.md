@@ -17,6 +17,7 @@ Install and use by directly including the [browser files](dist):
   <title>My A-Frame Scene</title>
   <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-lsystem-component/dist/aframe-lsystem-component.min.js"></script>
+  <!-- or better: download aframe and this component, and server it from your local directory -->
 </head>
 
 <body>
