@@ -1,6 +1,6 @@
 {
   "name": "aframe-fit-texture-component",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Fit Texture component for A-Frame.",
   "main": "index.js",
   "scripts": {
@@ -23,17 +23,19 @@
     "mozvr",
     "webvr"
   ],
-  "author": "Tom Brewe <tombrwe@gmail.com>",
+  "author": "Tom Brewe <tom@nylkiway.net>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nylki/aframe-fit-texture-component/issues"
   },
   "homepage": "https://github.com/nylki/aframe-fit-texture-component#readme",
   "devDependencies": {
-    "aframe": "^0.4.0",
-    "budo": "^7.1.0",
-    "ghpages": "0.0.3",
-    "inquirer": "^0.12.0",
-    "webpack": "^1.14.0"
+    "aframe": "^1.0.4",
+    "browserify-css": "^0.15.0",
+    "budo": "^11.6.3",
+    "envify": "^4.1.0",
+    "ghpages": "0.0.10",
+    "inquirer": "^7.1.0",
+    "webpack": "^2.7.0"
   }
 }
